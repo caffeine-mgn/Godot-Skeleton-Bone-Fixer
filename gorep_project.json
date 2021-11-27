@@ -1,0 +1,30 @@
+{
+  "name": "Godot-Skeleton-Bone-Fixer",
+  "title": "Skeleton Bone Fixer",
+  "author": "Anton Subochev",
+  "version": "0.0.1",
+  "dependencies": [
+    {
+      "name": "godot-plugin-refresher",
+      "version": "1.0",
+      "type": "INTERNAL"
+    },
+    {
+      "name": "gorep-addon",
+      "version": "1.0.0",
+      "type": "INTERNAL"
+    }
+  ],
+  "repositories": [
+    {
+      "name": "owncloud",
+      "path": "{env.GOREP_URL}",
+      "type": "WEBDAV",
+      "publish": true,
+      "basicAuth": {
+        "login": "{env.GOREP_LOGIN}",
+        "password": "{env.GOREP_PASSWORD}"
+      }
+    }
+  ]
+}
